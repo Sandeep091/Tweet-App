@@ -1,0 +1,30 @@
+2021-04-28 14:10:51.878  INFO 4556 --- [http-nio-8081-exec-6] c.t.t.TweetserviceApplication            : Forgot password - Inside Controller
+2021-04-28 14:10:52.069  INFO 4556 --- [http-nio-8081-exec-6] c.t.t.TweetserviceApplication            : getUserByUsername  - Inside Repository
+2021-04-28 14:10:52.251  INFO 4556 --- [http-nio-8081-exec-6] c.t.t.TweetserviceApplication            : Forgot password - Inside Service
+2021-04-28 14:10:52.252  INFO 4556 --- [http-nio-8081-exec-6] c.t.t.TweetserviceApplication            : changePassword  - Inside Repository
+2021-04-28 14:10:52.363  INFO 4556 --- [http-nio-8081-exec-6] c.t.t.TweetserviceApplication            : Password updated successfully  - Inside Service
+2021-04-28 14:10:52.366  INFO 4556 --- [http-nio-8081-exec-6] c.t.t.TweetserviceApplication            : Forgot password successfull - Inside Controller
+2021-04-28 14:11:11.371  INFO 4556 --- [http-nio-8081-exec-5] c.t.t.TweetserviceApplication            : User Login - Inside Controller
+2021-04-28 14:11:11.378  INFO 4556 --- [http-nio-8081-exec-5] c.t.t.TweetserviceApplication            : User login - Inside Service
+2021-04-28 14:11:11.378  INFO 4556 --- [http-nio-8081-exec-5] c.t.t.TweetserviceApplication            : getUserByUsername  - Inside Repository
+2021-04-28 14:11:11.384  INFO 4556 --- [http-nio-8081-exec-5] c.t.t.TweetserviceApplication            : User logged Sccessfully - Inside Service
+2021-04-28 14:11:11.385  INFO 4556 --- [http-nio-8081-exec-5] c.t.t.TweetserviceApplication            : User logger inSuccessfully - Inside Controller
+2021-04-28 14:11:11.561  INFO 4556 --- [http-nio-8081-exec-8] c.t.t.TweetserviceApplication            : Get All Tweet - Inside Controller
+2021-04-28 14:11:11.562  INFO 4556 --- [http-nio-8081-exec-8] c.t.t.TweetserviceApplication            : Get all tweet - Inside Service
+2021-04-28 14:11:11.563  INFO 4556 --- [http-nio-8081-exec-8] c.t.t.TweetserviceApplication            : Get all tweet  - Inside Repository
+2021-04-28 14:11:11.570  INFO 4556 --- [http-nio-8081-exec-8] c.t.t.TweetserviceApplication            : Success in getting all tweet - Inside Controller
+2021-04-28 14:12:27.996  INFO 4556 --- [http-nio-8081-exec-10] c.t.t.TweetserviceApplication            : Forgot password - Inside Controller
+2021-04-28 14:12:28.000  INFO 4556 --- [http-nio-8081-exec-10] c.t.t.TweetserviceApplication            : getUserByUsername  - Inside Repository
+2021-04-28 14:12:28.012  INFO 4556 --- [http-nio-8081-exec-10] c.t.t.TweetserviceApplication            : Forgot password - Inside Service
+2021-04-28 14:12:28.013  INFO 4556 --- [http-nio-8081-exec-10] c.t.t.TweetserviceApplication            : changePassword  - Inside Repository
+2021-04-28 14:12:28.030  INFO 4556 --- [http-nio-8081-exec-10] c.t.t.TweetserviceApplication            : Password updated successfully  - Inside Service
+2021-04-28 14:12:28.031  INFO 4556 --- [http-nio-8081-exec-10] c.t.t.TweetserviceApplication            : Forgot password successfull - Inside Controller
+2021-04-28 14:13:47.879  INFO 4556 --- [http-nio-8081-exec-2] c.t.t.TweetserviceApplication            : User Login - Inside Controller
+2021-04-28 14:13:47.881  INFO 4556 --- [http-nio-8081-exec-2] c.t.t.TweetserviceApplication            : User login - Inside Service
+2021-04-28 14:13:47.883  INFO 4556 --- [http-nio-8081-exec-2] c.t.t.TweetserviceApplication            : getUserByUsername  - Inside Repository
+2021-04-28 14:13:47.891  INFO 4556 --- [http-nio-8081-exec-2] c.t.t.TweetserviceApplication            : User logged Sccessfully - Inside Service
+2021-04-28 14:13:47.892  INFO 4556 --- [http-nio-8081-exec-2] c.t.t.TweetserviceApplication            : User logger inSuccessfully - Inside Controller
+2021-04-28 14:13:48.008  INFO 4556 --- [http-nio-8081-exec-3] c.t.t.TweetserviceApplication            : Get All Tweet - Inside Controller
+2021-04-28 14:13:48.009  INFO 4556 --- [http-nio-8081-exec-3] c.t.t.TweetserviceApplication            : Get all tweet - Inside Service
+2021-04-28 14:13:48.009  INFO 4556 --- [http-nio-8081-exec-3] c.t.t.TweetserviceApplication            : Get all tweet  - Inside Repository
+2021-04-28 14:13:48.016  INFO 4556 --- [http-nio-8081-exec-3] c.t.t.TweetserviceApplication            : Success in getting all tweet - Inside Controller
