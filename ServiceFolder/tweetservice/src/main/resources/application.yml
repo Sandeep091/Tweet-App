@@ -1,0 +1,11 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/tweetapp
+  application:
+    name: tweetservice
+server:
+  port: 8081
+logging:
+  file:
+    name: C:/Tweet-App-2/MidTier/tweetLog.log
