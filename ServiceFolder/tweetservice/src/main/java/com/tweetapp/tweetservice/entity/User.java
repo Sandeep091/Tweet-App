@@ -1,17 +1,13 @@
 package com.tweetapp.tweetservice.entity;
 
+
+import java.util.List;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-
-/*
- * @author Sandeep
- */
-
-
-@Document(collection="user")
+@Document(collection = "user")
 public class User {
-	
 	@Id
 	private String id;
 	private String firstName;
@@ -19,23 +15,30 @@ public class User {
 	private String email;
 	private String userName;
 	private String password;
-	private double contactNumber;
+	private String contactNumber;
+	private  List<String> notification;
 
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public User(String firstName, String lastName, String email, String userName, String password,
-			double contactNumber) {
+	
+
+	public User(String id, String firstName, String lastName, String email, String userName, String password,
+			String contactNumber, List<String> notification) {
 		super();
+		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 		this.userName = userName;
 		this.password = password;
 		this.contactNumber = contactNumber;
+		this.notification = notification;
 	}
+
+
 
 	public String getId() {
 		return id;
@@ -85,18 +88,28 @@ public class User {
 		this.password = password;
 	}
 
-	public double getContactNumber() {
+	public String getContactNumber() {
 		return contactNumber;
 	}
 
-	public void setContactNumber(double contactNumber) {
+	public void setContactNumber(String contactNumber) {
 		this.contactNumber = contactNumber;
+	}
+
+	
+	public List<String> getNotification() {
+		return notification;
+	}
+
+	public void setNotification(List<String> notification) {
+		this.notification = notification;
 	}
 
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
-				+ ", userName=" + userName + ", password=" + password + ", contactNumber=" + contactNumber + "]";
+				+ ", userName=" + userName + ", password=" + password + ", contactNumber=" + contactNumber
+				+ ", notification=" + notification + "]";
 	}
 
 

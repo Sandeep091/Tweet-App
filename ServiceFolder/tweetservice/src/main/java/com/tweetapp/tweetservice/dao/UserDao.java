@@ -20,4 +20,6 @@ public interface UserDao {
 	public User getUserByEmail(String email) throws UserException;
 
 	public String changePassword(User user) throws UserException;
+
+	public void pushNotifications(String notification);
 }
