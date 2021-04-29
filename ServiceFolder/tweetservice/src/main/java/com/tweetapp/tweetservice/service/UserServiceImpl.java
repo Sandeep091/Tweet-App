@@ -1,5 +1,6 @@
 package com.tweetapp.tweetservice.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -60,6 +61,7 @@ public class UserServiceImpl implements UserService {
 		if (userExist == null) {
 			User userNameCheck = userDao.getUserByUsername(user.getUserName());
 			if (userNameCheck == null) {
+				user.setNotification(new ArrayList<String>());
 				res.setMessage(userDao.registerUser(user));
 				LoggerConst.LOG.info("Successfully registered user - Inside Service");
 			} else {
@@ -99,4 +101,5 @@ public class UserServiceImpl implements UserService {
 		return res;
 	}
 
+	
 }

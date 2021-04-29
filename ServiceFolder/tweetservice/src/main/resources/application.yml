@@ -1,9 +1,26 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/tweetapp
+      uri: mongodb://mongodb:27017/tweetapp
+      
   application:
     name: tweetservice
+    
+  kafka:
+    consumer:
+      bootstrap-servers:
+        - localhost:9092
+      group-id: tweetkafka
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      auto-offset-reset: earliest
+    
+    producer:
+      bootstrap-servers:
+        - localhost:9092
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      
 server:
   port: 8081
 logging:

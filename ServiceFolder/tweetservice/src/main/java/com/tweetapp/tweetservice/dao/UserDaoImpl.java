@@ -3,6 +3,10 @@ package com.tweetapp.tweetservice.dao;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Component;
 
 import com.tweetapp.tweetservice.entity.User;
@@ -18,9 +22,10 @@ import com.tweetapp.tweetservice.util.LoggerConst;
 @Component
 public class UserDaoImpl implements UserDao {
 
-	
 	@Autowired
 	UserRepository userRepository;
+	@Autowired
+	MongoTemplate template;
 
 	@Override
 	public List<User> getAllUsers() throws UserException {
@@ -52,6 +57,14 @@ public class UserDaoImpl implements UserDao {
 		LoggerConst.LOG.info("changePassword  - Inside Repository");
 		userRepository.save(user);
 		return "Password updated Successfully";
+	}
+
+	@Override
+	public void pushNotifications(String userName) {
+		Query query = new Query();
+		query.addCriteria(Criteria.where("userName").exists(true));
+		Update update = new Update().push("notification", userName);
+		template.upsert(query, update, User.class);
 	}
 
 }
